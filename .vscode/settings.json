@@ -6,6 +6,7 @@
     "dylib",
     "endforeach",
     "endfunction",
+    "ostringstream",
     "qmlc",
     "qmlcache",
     "qmlproject",
