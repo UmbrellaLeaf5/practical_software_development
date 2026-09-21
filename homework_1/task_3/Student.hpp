@@ -45,6 +45,28 @@ class Student {
    */
   const std::map<std::size_t, double>& SubjectAverageGrades() const;
 
+  /**
+   * @brief Проверяет, привязан ли студент к предмету.
+   * @param subject_number номер предмета
+   * @return `true`, если предмет есть у студента
+   */
+  bool HasSubject(std::size_t subject_number) const;
+
+  /**
+   * @brief Привязывает студента к предмету с указанной средней оценкой.
+   * @param subject_number номер предмета
+   * @param average_grade средняя оценка
+   * @throw std::invalid_argument если предмет уже привязан к студенту
+   */
+  void AddSubject(std::size_t subject_number, double average_grade);
+
+  /**
+   * @brief Удаляет привязку студента к предмету.
+   * @param subject_number номер предмета
+   * @throw std::invalid_argument если предмет не привязан к студенту
+   */
+  void RemoveSubject(std::size_t subject_number);
+
  private:
   std::string _first_name;
   std::string _last_name;
