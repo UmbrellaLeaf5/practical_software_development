@@ -1,0 +1,14 @@
+[workspace]
+channels = ["conda-forge"]
+name = "practical-software-development"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[tasks]
+configure = "cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug"
+build = { cmd = "cmake --build build", depends-on = ["configure"] }
+
+[dependencies]
+cmake = ">=4.1,<5"
+gxx = ">=15.2,<16"
+ninja = ">=1.13,<2"

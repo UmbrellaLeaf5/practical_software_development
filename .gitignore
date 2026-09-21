@@ -77,5 +77,6 @@ compile_commands.json
 
 # Folders
 build/
+.pixi/
 .vscode/*
 !.vscode/settings.json

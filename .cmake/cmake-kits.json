@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Pixi GCC",
+    "compilers": {
+      "C": "${workspaceFolder}/.pixi/envs/default/Library/bin/cc.exe",
+      "CXX": "${workspaceFolder}/.pixi/envs/default/Library/bin/c++.exe"
+    },
+    "preferredGenerator": {
+      "name": "Ninja"
+    }
+  }
+]

@@ -1,4 +1,7 @@
 {
+  "cmake.additionalKits": [
+    "${workspaceFolder}/.cmake/cmake-kits.json"
+  ],
   "cSpell.words": [
     "dylib",
     "endforeach",
